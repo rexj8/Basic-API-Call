@@ -19,7 +19,7 @@
         Enter Country Name: <input type="text" name="" id="inpt">
     </div>
     
-    <button onclick="getDetails()">CLick to get Details!!</button>
+    <button onclick="getDetails(document.getElementById('inpt').value)">CLick to get Details!!</button>
 
     <div id="container"></div>
 
@@ -30,8 +30,8 @@
         var name=document.getElementById('inpt').value;
 
         name.addEventListener('click', function(){
-    getDetails(result.name);
-});
+            getDetails(this.name);
+        });
 
 
         function getDetails(){
