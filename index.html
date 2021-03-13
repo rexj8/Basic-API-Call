@@ -24,8 +24,10 @@
         var name=document.getElementById('input').value;
 
 
-        try{
-            function getDetails(name){
+       
+        function getDetails(name){
+
+            try{
 
                 document.getElementById("container").innerHTML = "";
 
@@ -53,12 +55,18 @@
 
                     container.insertAdjacentHTML("afterbegin",htmlData);
                 });
-            };       
-        }
+
+
+            }
+
+
+            catch(error){
+                alert("No such Country is available in our database");
+            }
+        };       
         
-        catch(error){
-            alert("No such Country is available in our database");
-        }
+        
+        
 
     </script>
 </body>
