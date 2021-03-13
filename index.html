@@ -29,12 +29,15 @@
     <script>
         var name=document.getElementById('input').value;
 
-        function clearBox(elementID)
-        {
-            document.getElementById(elementID).innerHTML = "";
-        }
+        // function clearBox(elementID)
+        // {
+        //     document.getElementById(elementID).innerHTML = "";
+        // }
 
         function getDetails(name){
+
+            document.getElementById("container").innerHTML = "";
+
             const container = document.querySelector('#container');
 
             const request = new XMLHttpRequest();
