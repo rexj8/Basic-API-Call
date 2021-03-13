@@ -41,6 +41,9 @@
             const htmlData =`
             <h1>${data.name}</h1>
             <div><img src="${data.flag}" style="height:210px; width:151px"></div>
+            </div>${data.nativeName}
+            </div>${data.population}
+            </div>${data.demonym}
             `;
 
             container.insertAdjacentHTML("afterbegin",htmlData);
