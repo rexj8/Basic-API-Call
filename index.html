@@ -34,12 +34,12 @@
         });
 
 
-        function getDetails(){
+        function getDetails(name){
             const container = document.querySelector('#container');
 
             const request = new XMLHttpRequest();
 
-            request.open('GET',"https://restcountries.eu/rest/v2/name/{name}");
+            request.open('GET',"https://restcountries.eu/rest/v2/name/nepal");
             request.send();
 
             //to get the response
