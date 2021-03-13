@@ -39,10 +39,11 @@
             console.log(data.name);
 
             const htmlData =`
-            <div><h1>${data.name}</h1></div>
+            <h1>${data.name}</h1>
+            <div style="height:50px; width:50px"><img src="${data.flag}"></div>
             `;
 
-            container.insertAdjacentHTML()
+            container.insertAdjacentHTML("afterbegin",htmlData);
         });
 
 
