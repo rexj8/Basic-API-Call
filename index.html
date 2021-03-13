@@ -25,17 +25,18 @@
 
     
     <script>
-        var name=document.getElementById('inpt');
+        // var name=document.getElementById('inpt');
         const container = document.querySelector('#container');
 
         const request = new XMLHttpRequest();
 
-        request.open('GET',"https://restcountries.eu/rest/v2/name/Nepal");
+        request.open('GET',"https://restcountries.eu/rest/v2/name/nepal");
 
         //to get the response
 
         request.addEventListener('load',function(){
-            this.responseText
+            // const data = this.responseText
+            console.log(this.responseText);
         });
 
 
