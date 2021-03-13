@@ -8,7 +8,7 @@
     
     <style>
         body{
-            background-color: rgba(0, 0, 0, 0.767);
+            /* background-color: rgba(0, 0, 0, 0.767); */
         }
     </style>
 
@@ -35,10 +35,12 @@
         //to get the response
 
         request.addEventListener('load',function(){
-            const [data] = JSON.parse(this.responseText)
-            // console.log(data.name);
+            const [data] = JSON.parse(this.responseText);
+            console.log(data.name);
 
-            const htmlData =`<h1>{data.name}</h1>`;
+            const htmlData =`
+            <div><h1>${data.name}</h1></div>
+            `;
         });
 
 
