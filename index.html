@@ -29,6 +29,10 @@
     <script>
         var name=document.getElementById('inpt').value;
 
+        name.addEventListener('click', function(){
+    getDetails(result.name);
+});
+
 
         function getDetails(){
             const container = document.querySelector('#container');
