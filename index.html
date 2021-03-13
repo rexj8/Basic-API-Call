@@ -35,7 +35,7 @@
         //to get the response
 
         request.addEventListener('load',function(){
-            const data = this.responseText
+            const [data] = JSON.parse(this.responseText)
             // console.log(data);
         });
 
