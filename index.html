@@ -16,10 +16,10 @@
 <body>
 
     <div class="txt">
-        Enter Country Name: <input type="text" name="" id="inpt">
+        Enter Country Name: <input type="text" name="" id="input" name="input">
     </div>
     
-    <button onclick="getDetails(document.getElementById('inpt').value)">CLick to get Details!!</button>
+    <button onclick="getDetails(document.getElementById('input').value)">CLick to get Details!!</button>
 
     <div id="container"></div>
 
@@ -27,7 +27,7 @@
 
     
     <script>
-        var name=document.getElementById('inpt').value;
+        var name=document.getElementById('input').value;
 
         name.addEventListener('click', function(){
             getDetails(this.name);
@@ -39,7 +39,7 @@
 
             const request = new XMLHttpRequest();
 
-            request.open('GET',"https://restcountries.eu/rest/v2/name/nepal");
+            request.open('GET',"https://restcountries.eu/rest/v2/name/"+name);
             request.send();
 
             //to get the response
