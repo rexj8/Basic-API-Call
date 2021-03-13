@@ -25,12 +25,12 @@
 
     
     <script>
-        // var name=document.getElementById('inpt');
+        var name=document.getElementById('inpt').value;
         const container = document.querySelector('#container');
 
         const request = new XMLHttpRequest();
 
-        request.open('GET',"https://restcountries.eu/rest/v2/name/nepal");
+        request.open('GET',"https://restcountries.eu/rest/v2/name/{name}");
         request.send();
 
         //to get the response
