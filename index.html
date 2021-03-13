@@ -29,10 +29,10 @@
     <script>
         var name=document.getElementById('input').value;
 
-        name.addEventListener('click', function(){
-            getDetails(this.name);
-        });
-
+        function clearBox(elementID)
+        {
+            document.getElementById(elementID).innerHTML = "";
+        }
 
         function getDetails(name){
             const container = document.querySelector('#container');
